@@ -47,7 +47,7 @@ a{
     display: flex;
 }
 .main__container{
-    width: 1152px;
+    max-width: 1152px;
     display: flex;
     flex-direction: column;
     margin: 0px 0px 0px 135px;
@@ -122,21 +122,19 @@ a{
 }
 .about__container{
     min-height: 729px;
-    width: 1065px;
+    max-width: 1065px;
     margin: 120px 135px 0px 135px;
     display: flex;
     flex-direction: column;
-    
 }
-.sub-title{
-    width: 206px;
-    margin: 0px 0px 0px 450px;
+.about__sub-title{
     font-family: Poppins;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 2px;
     color: #D77474;
+    text-align: center;
 }
 .title{
     margin: 40px 0px 0px 0px;
@@ -219,7 +217,7 @@ a{
 }
 .about__text-text{
     margin: 26px 0px 0px 0px;
-    width: 450px;
+    max-width: 450px;
     font-family: 'Libre Franklin';
     font-style: normal;
     font-weight: 400;
@@ -229,7 +227,7 @@ a{
 }
 .product__container{
     min-height: 729px;
-    width: 1065px;
+    max-width: 1065px;
     margin: 120px 135px 0px 135px;
     display: flex;
     flex-direction: column;
@@ -264,6 +262,11 @@ a{
     display: flex;
     flex-direction: column;
 }
+.product__img-orange{
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
 .product__img img{
     z-index: 2;
 }
@@ -286,7 +289,7 @@ a{
 }
 .collection__container{
     min-height: 729px;
-    width: 1065px;
+    max-width: 1065px;
     margin: 120px 135px 0px 135px;
     display: flex;
     flex-direction: column;
@@ -364,7 +367,7 @@ a{
 }
 .shop__container{
     min-height: 371px;
-    width: 1065px;
+    max-width: 1065px;
     margin: 121px 135px 0px 135px;
     display: flex;
     flex-direction: column;
@@ -425,12 +428,12 @@ a{
 }
 .shop__background{
     position: absolute;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 }
 .news__container{
     min-height: 350px;
-    width: 1065px;
+    max-width: 1065px;
     margin: 120px 135px 0px 135px;
     display: flex;
     flex-direction: column;
@@ -517,7 +520,7 @@ a{
 }
 .footer__container{
     min-height: 100px;
-    width: 1065px;
+    max-width: 1065px;
     margin: 120px 135px 0px 135px;
     display: flex;
     flex-direction: column;
@@ -538,4 +541,97 @@ a{
     font-size: 14px;
     line-height: 24px;
     color: #6C6C6C;
+}
+@media(max-width: 1050px){
+    .about__categories{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__text-title p{
+        text-align: center;
+    }
+    
+    
+}
+@media(max-width:1200px){
+    .about__text-block{
+        margin: 0px 30px 0px 0px;
+    }
+}
+@media(max-width:790px){
+    .menu__list{
+        margin: 0px 36px 0px 200px;
+    }
+}
+@media(max-width:1200px){
+    .product__content{
+        align-items: center;
+    }
+    .product__container{
+        margin: 0px 135px 0px 135px;
+        align-items: center;
+    }
+    .product__content-title{
+        margin: 0px;
+    }
+    .product__content-text{
+        max-width: 250px;
+        margin: 0px;
+    }
+    .product__content-button{
+        margin: 0px;
+    }
+    .product__img{
+        margin: 0px;
+    }
+    .product__img img{
+        margin: 0px;
+        max-width: 100%;
+        height: 200px;
+        width: 150px;
+    }
+    .product__block{
+        margin: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product__content{
+        margin: 0px;
+    }
+    .product__block-orange{
+        margin: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product__content-orange{
+        margin: 0px;
+    }
+    .product__img-orange img{
+        max-width: 100%;
+        height: 200px;
+        width: 150px;
+    }
+}
+
+@media(max-width:865px){
+    .news__title{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+@media(max-width:700px){
+    .collection__first__row{
+        flex-direction: column;
+    }
+    .collection__second__row{
+        flex-direction: column;
+    }
+
+}
+@media(max-width:1000px){
+    .shop__background{
+        transform: scale(-1, 1);
+    }
 }
